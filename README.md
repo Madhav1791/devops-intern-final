@@ -17,6 +17,17 @@ This repository documents and contains the artifacts for the DevOps Intern Final
 ---
 
 ## 2. How to Run/Test:
-# Make sure you are in the project root directory
-chmod +x scripts/sysinfo.sh
-./scripts/sysinfo.sh
+* Make sure you are in the project root directory
+* chmod +x scripts/sysinfo.sh
+* ./scripts/sysinfo.sh
+
+---
+
+
+## 4.How to Build and Run Locally
+# 1. Build the image
+docker build -t hello-devops:latest .
+
+# 2. Run the container
+docker run --rm hello-devops:latest
+# Expected Output: Hello, DevOps!
