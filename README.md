@@ -37,3 +37,15 @@ docker run --rm hello-devops:latest
 ## 5. CI/CD with GitHub Actions
 * **Status:** Complete.
 * The `.github/workflows/ci.yml` file is configured to run `python hello.py` on every push to `main`. The status badge above reflects the latest build status.
+
+
+---
+
+
+## 6. How to Run on Nomad
+* Ensure your Nomad agent is running
+* Deploy the job
+nomad job run nomad/hello.nomad
+
+* Check the status
+nomad status hello-devops
