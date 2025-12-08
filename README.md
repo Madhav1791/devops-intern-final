@@ -13,3 +13,10 @@ This repository documents and contains the artifacts for the DevOps Intern Final
 ## 1. Git & GitHub Setup
 * **Status:** Complete.
 * The repository is initialized with this README and a sample script (`hello.py`).
+
+---
+
+## 2. How to Run/Test:
+# Make sure you are in the project root directory
+chmod +x scripts/sysinfo.sh
+./scripts/sysinfo.sh
