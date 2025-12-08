@@ -25,9 +25,15 @@ This repository documents and contains the artifacts for the DevOps Intern Final
 
 
 ## 4.How to Build and Run Locally
-# 1. Build the image
+* 1. Build the image
 docker build -t hello-devops:latest .
 
-# 2. Run the container
+* 2. Run the container
 docker run --rm hello-devops:latest
-# Expected Output: Hello, DevOps!
+** Expected Output: Hello, DevOps!
+
+---
+
+## 5. CI/CD with GitHub Actions
+* **Status:** Complete.
+* The `.github/workflows/ci.yml` file is configured to run `python hello.py` on every push to `main`. The status badge above reflects the latest build status.
