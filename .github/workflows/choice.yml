@@ -13,10 +13,10 @@ on:
 
 jobs:
   Build:
-    - name: To Test the Inputs
-      runs-on: ubuntu-latest
-      steps:
-        - name: Selecting the environment: 
-          run: |
-            echo " The Application is Deployed to ${{ inputs.Environment }}"
+    name: To Test the Inputs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Selecting the environment
+        run: |
+          echo " The Application is Deployed to ${{ inputs.Environment }} "
     
