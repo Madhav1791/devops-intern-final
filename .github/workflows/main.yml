@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Enter the Application Name
         run: |
-          echo "Application name: ${{ inputs.app-name }}
+          echo "Application name: ${{ inputs.app-name }}"
