@@ -1,0 +1,16 @@
+name: String Input Example
+on:
+  workflow_dispatch:
+    inputs:
+      app-name: 
+        description:  Enter Application Name
+        required: true
+        type: string
+        default: MovieTicketBooking
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enter the Application Name
+        run: |
+          echo "Application name: ${{ inputs.app-name }}
